@@ -1,49 +1,81 @@
-/* Reset default styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-/* Image styling */
-.img-diibad, .img-done, .img-dtwo {
-    width: 100%;
-    padding: 20px 0;
-}
-
-/* Ensure .img-diibad is initially hidden on small screens */
-.img-diibad {
-    display: none;
-}
-
-/* Text styling */
-.img-diibad h2 {
-    padding: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    color: #111;
-    line-height: 44px;
-}
-
-.img-diibad p {
-    padding: 0px 30px 20px;
     font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #111;
-    line-height: 24px;
 }
 
-/* Make images responsive */
-@media only screen and (min-width: 768px) {
-    .img-diibad {
-        display: block;
-        width: 100%;
-        padding: 30px;
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero h1 {
+    color: blue;
+    font-size: 36px;
+}
+
+.signup-btn {
+    display: inline-block;
+    background-color: gold;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Features Section */
+.features-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.feature {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .features-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 90%;
     }
 }
